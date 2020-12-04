@@ -1,3 +1,5 @@
+## Returns the name of the hospital with the lowest mortality rate for a specified outcome and state.  
+
 best <- function(state, outcome){
         df <- read.csv("outcome-of-care-measures.csv", na.strings = "Not Available", stringsAsFactors = FALSE)
         p.outcomes <- c("heart attack"=11, "heart failure"=17,"pneumonia"=23) ## creates index for possible outcomes
